@@ -4,7 +4,7 @@ import About from "./about/index";
 import Projects from "./projects/index";
 import Skills from "./skills/index";
 import Contact from "./contact/index";
-import Work from "./work/index";
+// import Work from "./work/index";
 function Body() {
   return (
     <div className="body">
