@@ -35,5 +35,8 @@
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
