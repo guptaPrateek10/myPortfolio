@@ -4,6 +4,7 @@ import React from "react";
 import "./contact.css";
 import Separator from "../../common/separator/index";
 import SocialContact from "../../common/social-contact/index";
+//contact section
 function Contect() {
   return (
     <div className="contact">
