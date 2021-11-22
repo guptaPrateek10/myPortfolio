@@ -1,5 +1,5 @@
 import React from "react";
-//hello
+
 import "./contact.css";
 import Separator from "../../common/separator/index";
 import SocialContact from "../../common/social-contact/index";
