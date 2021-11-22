@@ -14,7 +14,7 @@ function Contect() {
         <div className="download">
           <a
             download
-            href={require("../../../assets/Resume/RESUME.docx").default}
+            href={require("../../../assets/Resume/RESUME.pdf").default}
           >
             <i className="fi-rr-cloud-download download-icon"></i>
             <span>Download Resume</span>
