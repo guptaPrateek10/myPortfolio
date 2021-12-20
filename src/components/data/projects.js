@@ -4,7 +4,7 @@ export const ProjectData = [
     title: "Project:1 Portfolio",
     about: "This is my portfolio website.",
     tags: ["Reacts.js", "styled-components", "HTML", "CSS"],
-    demo: "https://myportfolio-525ae.web.app/",
+    demo: "https://portfolio-6c9a6.web.app/",
     github: "https://github.com/guptaPrateek10/myPortfolio",
     image: require("../../assets/projectsPic/Projectpic.png").default,
   },
