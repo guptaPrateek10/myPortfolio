@@ -1,0 +1,50 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.contact-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0 px;
+}
+.contact-left {
+  max-width: 100%;
+}
+.download {
+  background-color: #1971c2;
+  padding: 8px 8px;
+  font-size: 16px;
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+}
+.download a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 720px) {
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-left {
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .download {
+    font-size: 16px;
+  }
+}
