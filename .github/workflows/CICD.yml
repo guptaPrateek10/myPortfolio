@@ -37,7 +37,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: ${{ secrets.ROLE_ARN }}
+        role-to-assume: arn:aws:iam::922372995423:role/GitHubPrateekActionsRole
         aws-region: ap-south-1
     # Deploy push to AWS S3
     - name: AWS Deploy push
