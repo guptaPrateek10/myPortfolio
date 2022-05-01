@@ -7,6 +7,10 @@
 .section-title {
   font-size: 32px;
   font-weight: 700;
+  font-family:Georgia,serif;
+  color:#A80C1E;
+  letter-spacing:-1.5px;
+  line-height:1em;
 }
 
 .contact-container {

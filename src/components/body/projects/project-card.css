@@ -17,6 +17,8 @@
 .project-title {
   font-size: 20px;
   font-weight: 600;
+  margin-left: 8px;
+
 }
 .project-tags {
   display: flex;
@@ -25,6 +27,8 @@
 }
 .project-about {
   font-weight: 550;
+  margin: 16px 8px;
+
 }
 .tag {
   padding: 4px 8px;
@@ -56,6 +60,7 @@
   font-size: 16px;
   font-weight: 600;
   margin-right: 10px;
+  margin-left: 8px;
 }
 .link-button i {
   display: flex;

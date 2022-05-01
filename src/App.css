@@ -11,10 +11,7 @@
   left: 0;
   top: 0;
   z-index: -1;
-  background: #536976;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background-image: linear-gradient(to right bottom, #177a4f, #008a73, #009a96, #00a8b8, #3db5d5, #31bddb, #21c5e1, #00cde6, #00d0c4, #2dce92, #77c757, #b2b914);
   
 }
 
