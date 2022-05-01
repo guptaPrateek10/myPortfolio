@@ -39,4 +39,6 @@ jobs:
         aws-region: ap-south-1
     # Deploy push to AWS S3
     - name: AWS Deploy push
-      run: aws s3 sync build s3://iprateek.in
+      run: |
+        aws s3 sync build s3://iprateek.in
+        aws cloudfront create-invalidation --distribution-id E3I2HOXQEGLV8E --path /*
