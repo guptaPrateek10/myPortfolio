@@ -1,5 +1,6 @@
 import React from "react";
 import "./mobile.css";
+
 function Mobile({ isOpen, setIsOpen }) {
   return (
     <div className="mobile">

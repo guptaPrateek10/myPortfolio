@@ -1,5 +1,7 @@
 import React from "react";
 import SocialContact from "../../common/social-contact/index";
+import { motion } from "framer-motion";
+
 import "./about.css";
 function About() {
   return (
@@ -12,10 +14,14 @@ function About() {
           <br />I Love Experimenting With Web.
         </div>
         <div className="about-photo">
-          <img
+          <motion.img
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
             src={require("../../../assets/coding.png").default}
-            className="picture" alt=""
-          ></img>
+            className="picture"
+            alt=""
+          ></motion.img>
         </div>
       </div>
       <SocialContact />
