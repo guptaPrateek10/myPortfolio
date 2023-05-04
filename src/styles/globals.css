@@ -5,7 +5,6 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 
 :root {
@@ -25,8 +24,50 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
-@layer base{
+@layer base {
   body {
-      @apply dark:bg-gray-800 bg-white
+    @apply dark:bg-gray-800 bg-white;
+  }
+}
+.web {
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.icon-mobile {
+  @media only screen and (max-width: 600px) {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.mobile-circle1 {
+  @media only screen and (max-width: 600px) {
+    height: 100px;
+    width: 100px;
+  }
+}
+.mobile-circle2 {
+  @media only screen and (max-width: 600px) {
+    height: 150px;
+    width: 150px;
+  }
+}
+.mobile-circle3 {
+  @media only screen and (max-width: 600px) {
+    height: 225px;
+    width: 225px;
+  }
+}
+.mobile-circle4 {
+  @media only screen and (max-width: 600px) {
+    height: 400px;
+    width: 400px;
+  }
+}
+.mobile-circle5 {
+  @media only screen and (max-width: 600px) {
+    height: 400px;
+    width: 400px;
   }
 }
