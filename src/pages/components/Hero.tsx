@@ -2,7 +2,7 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircle from "./BackgroundCircle";
 import Image from "next/image";
-import mypic from "../../assets/mypic.jpg";
+const mypic = require("../../assets/mypic.jpg");
 type Props = {};
 
 const Hero = (props: Props) => {
@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
     deleteSpeed: 50,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center  ">
+    <div className="h-screen flex flex-col space-y-8 items-stretch justify-center text-center   ">
       <BackgroundCircle />
       <Image
         className="relative rounded-full h-40 w-40 mx-auto object-cover"

@@ -11,7 +11,7 @@ const About = (props: Props) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="flex  flex-col  relative h-screen text-center md:text-left md:flex-col sm:flex-col xl:flex-col
-    max-w-7xl px-10 justify-evenly mx-auto items-center"
+    max-w-7xl px-10 justify-evenly mx-auto py-20 gap-8 items-center "
     >
       <h3 className=" top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
@@ -30,13 +30,13 @@ const About = (props: Props) => {
         flex-shrink-0 w-56 h-56 md:rounded-lg
          md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] "
       />
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="space-y-10 my-12 px-0 md:px-10">
+        <h4 className="text-4xl font-semibold my-6 text-gray-500">
           Here is a{" "}
           <span className="underline decoration-[#f7ab0a]/50"> Small</span>{" "}
           Background
         </h4>
-        <p className="text-base">
+        <p className="text-base dark: text-gray-500">
           I'm a React JavaScript developer with 2.5 years of experience. As a
           developer, I'm passionate about building responsive, performant, and
           user-friendly web applications using React. I have a strong

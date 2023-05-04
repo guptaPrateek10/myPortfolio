@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import sun from "../../assets/moon.png";
 import moon from "../../assets/night-mode.png";
+import { useRouter } from "next/navigation";
 type Props = {};
 
 const socialData = [
@@ -18,12 +19,14 @@ const socialData = [
 ];
 const menuData = [
   { title: "Home", link: "/" },
-  { title: "Skills", link: "/skills" },
-  { title: "Projects", link: "/projects" },
-  { title: "Contact", link: "/contact" },
+  { title: "About", link: "/About" },
+  { title: "Skills", link: "/Skills" },
+  { title: "Projects", link: "/Projects" },
+  { title: "Contact", link: "/Contact" },
 ];
 const Navbar = (props: Props) => {
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
   useEffect(() => {
     setTheme("dark");
   }, []);
@@ -74,7 +77,7 @@ const Navbar = (props: Props) => {
         transition={{
           duration: 1,
         }}
-        className="flex flex-row gap-10 text-lg subpixel-antialiased font-semibold	 dark:text-gray-600 cursor-pointer "
+        className="flex flex-row gap-10 text-lg subpixel-antialiased font-semibold	 dark:text-gray-500 cursor-pointer "
       >
         <Image
           // src={`${theme} == "dark" ? sun : , moon`}
@@ -87,7 +90,7 @@ const Navbar = (props: Props) => {
         {menuData.map((d, i): any => {
           return (
             <div key={i}>
-              <Link href={d.link}>{d.title}</Link>
+              <Link href={`${d.link}`}>{d.title}</Link>
             </div>
           );
         })}

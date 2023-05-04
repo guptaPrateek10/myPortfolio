@@ -12,7 +12,7 @@ const Skill = ({ directionLeft, src, prof }: Props) => {
   return (
     <div
       className="group relative flex cursor-pointer rounded-full w-24 h-24  xl:w-32
-    xl:h-32"
+    xl:h-32 "
     >
       <motion.img
         initial={{

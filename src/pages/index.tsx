@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`dark:bg-gray-800 bg-white h-screen flex flex-col   
-        ${inter.className} snap-y  snap-mandatory z-0   `}
+      className={`dark:bg-gray-800 bg-white h-screen flex flex-col  
+        ${inter.className} snap-y  snap-mandatory z-0  lg:gap-[250px] md:gap-[100px] `}
     >
       <Head>
         <title>Prateek's Portfolio</title>
@@ -19,11 +19,11 @@ export default function Home() {
       </Head>
 
       {/*Hero Section */}
-      <section id="hero" className="snap-start xl:h-[1080px]">
+      <section id="hero" className="snap-start ">
         <Hero />
       </section>
       {/*About */}
-      <section id="about" className="snap-center ">
+      <section id="about" className="snap-center  ">
         <About />
       </section>
       {/*Experience */}
