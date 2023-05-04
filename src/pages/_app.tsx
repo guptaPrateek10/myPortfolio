@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" defaultTheme="dark">
         <Navbar />
         <Component {...pageProps} />
       </ThemeProvider>

@@ -10,7 +10,7 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex  flex-col relative h-screen text-center md:text-left md:flex-row
+      className="flex  flex-col  relative h-screen text-center md:text-left md:flex-col sm:flex-col xl:flex-col
     max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       <h3 className=" top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -37,12 +37,12 @@ const About = (props: Props) => {
           Background
         </h4>
         <p className="text-base">
-          I'm Prateek.I'm a React JavaScript developer with 2.5 years of
-          experience. As a developer, I'm passionate about building responsive,
-          performant, and user-friendly web applications using React. I have a
-          strong understanding of the React ecosystem, including Redux, React
-          Router, and other related technologies. I'm also comfortable working
-          with other front-end technologies such as HTML, CSS, and JavaScript.
+          I'm a React JavaScript developer with 2.5 years of experience. As a
+          developer, I'm passionate about building responsive, performant, and
+          user-friendly web applications using React. I have a strong
+          understanding of the React ecosystem, including Redux, React Router,
+          and other related technologies. I'm also comfortable working with
+          other front-end technologies such as HTML, CSS, and JavaScript.
           Throughout my career, I've collaborated with designers, product
           owners, and other developers to deliver high-quality software products
           on time and within budget. I'm comfortable working in an Agile

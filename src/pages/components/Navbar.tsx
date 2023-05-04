@@ -1,7 +1,7 @@
 "use client";
 import { data } from "autoprefixer";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
@@ -24,9 +24,11 @@ const menuData = [
 ];
 const Navbar = (props: Props) => {
   const { theme, setTheme } = useTheme();
-  console.log({ theme });
+  useEffect(() => {
+    setTheme("dark");
+  }, []);
   return (
-    <header className="dark:bg-gray-800 bg-white flex flex-row items-center justify-between sticky top-0 max-w-7xl mx-auto z-20 xl:items-center p-2">
+    <header className="dark:bg-gray-800 bg-white flex flex-row items-center justify-between sticky top-0 max-w-7xl mx-auto z-20 xl:items-center p-2 z-999">
       {/* /Social Icons */}
       <motion.div
         initial={{
@@ -76,7 +78,7 @@ const Navbar = (props: Props) => {
       >
         <Image
           // src={`${theme} == "dark" ? sun : , moon`}
-          src={theme === "dark" ? sun : moon}
+          src={theme === "dark" ? sun : theme === undefined ? sun : moon}
           alt="Toggle button"
           width="32"
           height="32"
