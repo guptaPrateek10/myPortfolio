@@ -66,7 +66,7 @@ const Navbar = (props: Props) => {
       <div className="flex gap-6">
         <Image
           // src={`${theme} == "dark" ? sun : , moon`}
-          className="mx-auto my-auto"
+          className="mx-auto my-auto cursor-pointer"
           src={theme === "dark" ? sun : theme === undefined ? sun : moon}
           alt="Toggle button"
           width="32"
