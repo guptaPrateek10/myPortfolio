@@ -4,6 +4,7 @@ import Head from "next/head";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,9 @@ export default function Home() {
       {/*Resume */}
 
       {/*Contact */}
+      <section id="contact" className="snap-start">
+        <Contact />
+      </section>
     </main>
   );
 }
