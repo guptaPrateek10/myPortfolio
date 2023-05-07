@@ -12,6 +12,7 @@ import jira from "../../assets/jira.png";
 import next from "../../assets/next.svg";
 import tailwind from "../../assets/tailwind.png";
 import vscode from "../../assets/vscode.png";
+import aws from "../../assets/aws.png";
 type Props = {};
 
 const Skills = (props: Props) => {
@@ -29,7 +30,7 @@ const Skills = (props: Props) => {
       <h3 className="top-24 text-center uppercase tracking-[10px] text-gray-500 text-sm">
         Hover on the skills for get info of proficiency{" "}
       </h3>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-2 px-2">
         <Skill directionLeft={true} src={html.src} prof="80%" />
         <Skill directionLeft={true} src={css.src} prof="80%" />
         <Skill directionLeft={true} src={js.src} prof="75%" />
@@ -41,6 +42,7 @@ const Skills = (props: Props) => {
         <Skill directionLeft={true} src={github.src} prof="70%" />
         <Skill directionLeft={true} src={vscode.src} prof="75%" />
         <Skill directionLeft={true} src={jira.src} prof="60%" />
+        <Skill directionLeft={true} src={aws.src} prof="50%" />
       </div>
     </motion.div>
   );

@@ -1,14 +1,16 @@
 "use client";
 import { data } from "autoprefixer";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import sun from "../../assets/moon.png";
-import moon from "../../assets/night-mode.png";
+import sun from "../../assets/sun.png";
+import moon from "../../assets/moon.png";
 import { useRouter } from "next/navigation";
+import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/solid";
+
 type Props = {};
 
 const socialData = [
@@ -25,13 +27,15 @@ const menuData = [
   { title: "Contact", link: "/Contact" },
 ];
 const Navbar = (props: Props) => {
+  const [isOpenMenu, setisOpenMenu] = useState(false);
+
   const { theme, setTheme } = useTheme();
   const router = useRouter();
   useEffect(() => {
     setTheme("dark");
   }, []);
   return (
-    <header className="dark:bg-gray-800  bg-white  flex flex-row items-center justify-between sticky top-0 max-w-7xl mx-auto z-20 xl:items-center p-2 z-999">
+    <header className="dark:bg-gray-800 relative bg-white  flex flex-row items-center justify-between sticky top-0 max-w-7xl mx-auto z-20 xl:items-center p-2 ">
       {/* /Social Icons */}
       <motion.div
         initial={{
@@ -97,6 +101,27 @@ const Navbar = (props: Props) => {
             );
           })}
         </motion.div>
+        <Bars4Icon
+          className="h-12 w-12 text-[#808080] mobile group-hover:bg-[#f7ab0a] cursor-pointer"
+          onClick={() => setisOpenMenu(!isOpenMenu)}
+        />
+
+        {isOpenMenu && (
+          <div className="flex flex-col justify-center items-center absolute top-0 right-0 gap-10 text-2xl z-99 subpixel-antialiased dark:bg-slate-700 bg-white  w-2/4  h-screen font-semibold	 dark:text-gray-500 cursor-pointer ">
+            <XMarkIcon
+              className="h-16 w-16 absolute top-2 right-0 text-[#808080] mobile group-hover:bg-[#f7ab0a] cursor-pointer"
+              onClick={() => setisOpenMenu(!isOpenMenu)}
+            />
+
+            {menuData.map((d, i): any => {
+              return (
+                <div key={i}>
+                  <Link href={`${d.link}`}>{d.title}</Link>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </header>
   );

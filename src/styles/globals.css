@@ -20,6 +20,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.ContactInput {
+  @apply outline-none dark:bg-slate-400/10 bg-slate-200 rounded-sm border-b px-3 py-3 md:px-6 md:py-6 lg:px-6 lg:py-6  dark:border-[#242424] border-[#f7ab0a]
+  text-gray-500 placeholder-gray-400 transition-all focus:border-[#f7ab0a]/40
+  dark:focus:text-[#f7ab0a] focus:text-[#000] dark:hover:border-[#f7ab0a]/40 hover:border-[#000]/40;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -31,6 +36,11 @@ body {
 }
 .web {
   @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.mobile {
+  @media only screen and (min-width: 600px) {
     display: none;
   }
 }

@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
         src={mypic}
         alt="Prateek's Photo"
       />
-      <div className="z-20">
+      <div className="z-19">
         <h2 className=" text-sm-uppercase text-gray-500 pb-2 tracking-[15px] ">
           Software Engineer
         </h2>
