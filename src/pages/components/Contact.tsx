@@ -8,6 +8,7 @@ const Contact = (props: Props) => {
 
   function sendEmail(event: any): void {
     event.preventDefault();
+    console.log("clicked");
     const currentForm = ref.current;
     if (currentForm == null) return;
 
@@ -20,6 +21,8 @@ const Contact = (props: Props) => {
       )
       .then(
         (result) => {
+          alert("Your Response has been sent to Prateek via Email");
+          ref.current?.reset();
           console.log(result.text);
           console.log("successfull");
         },

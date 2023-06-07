@@ -21,10 +21,10 @@ const socialData = [
 ];
 const menuData = [
   { title: "Home", link: "/" },
-  { title: "About", link: "/About" },
-  { title: "Skills", link: "/Skills" },
-  { title: "Projects", link: "/Projects" },
-  { title: "Contact", link: "/Contact" },
+  { title: "About", link: "#About" },
+  { title: "Skills", link: "#Skills" },
+  { title: "Projects", link: "#Projects" },
+  { title: "Contact", link: "#Contact" },
 ];
 const Navbar = (props: Props) => {
   const [isOpenMenu, setisOpenMenu] = useState(false);
@@ -109,14 +109,19 @@ const Navbar = (props: Props) => {
         {isOpenMenu && (
           <div className="flex flex-col justify-center items-center absolute top-0 right-0 gap-10 text-2xl z-99 subpixel-antialiased dark:bg-slate-700 bg-white  w-2/4  h-screen font-semibold	 dark:text-gray-500 cursor-pointer ">
             <XMarkIcon
-              className="h-16 w-16 absolute top-2 right-0 text-[#808080] mobile group-hover:bg-[#f7ab0a] cursor-pointer"
+              className="h-16 w-16 absolute top-2 right-0 text-[#808080] mobile group-hover:bg-[#d2bd8f] cursor-pointer"
               onClick={() => setisOpenMenu(!isOpenMenu)}
             />
 
             {menuData.map((d, i): any => {
               return (
                 <div key={i}>
-                  <Link href={`${d.link}`}>{d.title}</Link>
+                  <Link
+                    onClick={() => console.log(`${d.link}`)}
+                    href={`${d.link}`}
+                  >
+                    {d.title}
+                  </Link>
                 </div>
               );
             })}
