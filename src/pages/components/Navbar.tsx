@@ -109,7 +109,7 @@ const Navbar = (props: Props) => {
         {isOpenMenu && (
           <div className="flex flex-col justify-center items-center absolute top-0 right-0 gap-10 text-2xl z-99 subpixel-antialiased dark:bg-slate-700 bg-white  w-2/4  h-screen font-semibold	 dark:text-gray-500 cursor-pointer ">
             <XMarkIcon
-              className="h-16 w-16 absolute top-2 right-0 text-[#808080] mobile group-hover:bg-[#d2bd8f] cursor-pointer"
+              className="h-16 w-16 absolute top-2 right-0 text-[#808080] mobile group-hover:bg-[#f7ab0a] cursor-pointer"
               onClick={() => setisOpenMenu(!isOpenMenu)}
             />
 
@@ -117,7 +117,7 @@ const Navbar = (props: Props) => {
               return (
                 <div key={i}>
                   <Link
-                    onClick={() => console.log(`${d.link}`)}
+                    onClick={() => console.log(`${d.title}`)}
                     href={`${d.link}`}
                   >
                     {d.title}
