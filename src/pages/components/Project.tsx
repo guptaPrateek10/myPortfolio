@@ -18,7 +18,10 @@ const Project = () => {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap">
         {projectCount.map((project, index): any => {
           return (
-            <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+            <div
+              key={index}
+              className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+            >
               <motion.div
                 initial={{
                   y: -300,
@@ -53,6 +56,7 @@ const Project = () => {
                         alt="project"
                         width="32"
                         height="32"
+                        key={index}
                       />
                     );
                   })}
