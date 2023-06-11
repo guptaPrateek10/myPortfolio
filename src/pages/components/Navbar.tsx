@@ -20,11 +20,11 @@ const socialData = [
   { link: "https://www.facebook.com/Catchmeprateek" },
 ];
 const menuData = [
-  { title: "Home", link: "/" },
-  { title: "About", link: "#About" },
-  { title: "Skills", link: "#Skills" },
-  { title: "Projects", link: "#Projects" },
-  { title: "Contact", link: "#Contact" },
+  { title: "Home", link: "#hero" },
+  { title: "About", link: "#about" },
+  { title: "Skills", link: "#skills" },
+  { title: "Projects", link: "#projects" },
+  { title: "Contact", link: "#contact" },
 ];
 const Navbar = (props: Props) => {
   const [isOpenMenu, setisOpenMenu] = useState(false);
@@ -96,7 +96,13 @@ const Navbar = (props: Props) => {
           {menuData.map((d, i): any => {
             return (
               <div key={i}>
-                <Link href={`${d.link}`}>{d.title}</Link>
+                <Link
+                  // onClick={() => router.push(`${d.link}`)}
+                  scroll={false}
+                  href={`${d.link}`}
+                >
+                  {d.title}
+                </Link>
               </div>
             );
           })}
@@ -116,10 +122,7 @@ const Navbar = (props: Props) => {
             {menuData.map((d, i): any => {
               return (
                 <div key={i}>
-                  <Link
-                    onClick={() => console.log(`${d.title}`)}
-                    href={`${d.link}`}
-                  >
+                  <Link scroll={false} href={`${d.link}`}>
                     {d.title}
                   </Link>
                 </div>
