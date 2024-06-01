@@ -39,7 +39,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::922372995423:role/GitHubActionsOidcRole
           role-session-name: github-portfolio
-          aws-region: ap-south-1
+          aws-region: us-east-1
       # Deploy push to AWS S3
       - name: AWS Deploy push
         run: |
