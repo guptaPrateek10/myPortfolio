@@ -44,4 +44,4 @@ jobs:
       - name: AWS Deploy push
         run: |
           aws s3 sync out s3://iprateek.in
-          aws cloudfront create-invalidation --distribution-id E3I2HOXQEGLV8E --path /*
+          aws cloudfront create-invalidation --distribution-id E3I2HOXQEGLV8E --path "/*"
