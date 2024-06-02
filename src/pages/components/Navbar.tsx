@@ -91,7 +91,7 @@ const Navbar = (props: Props) => {
           transition={{
             duration: 1,
           }}
-          className="flex flex-row gap-10 text-lg subpixel-antialiased font-semibold	 dark:text-gray-500 cursor-pointer web"
+          className="flex flex-row gap-10 text-lg subpixel-antialiased font-semibold	 dark:text-gray-500 text-gray-500 cursor-pointer web"
         >
           {menuData.map((d, i): any => {
             return (
@@ -122,7 +122,11 @@ const Navbar = (props: Props) => {
             {menuData.map((d, i): any => {
               return (
                 <div key={i}>
-                  <Link scroll={false} href={`${d.link}`}>
+                  <Link
+                    scroll={false}
+                    href={`${d.link}`}
+                    className="dark:text-gray-500 text-gray-500"
+                  >
                     {d.title}
                   </Link>
                 </div>
