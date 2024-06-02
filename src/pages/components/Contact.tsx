@@ -39,7 +39,7 @@ const Contact = (props: Props) => {
         Contact
       </h3>
       {/* Personal Detail section */}
-      <div className="flex flex-col space-y-10">
+      <div className="flex flex-col space-y-10 text-gray-500">
         <h4 className="text-4xl font-semibold text-center ">
           Fill the below details to{" "}
           <span className="decoration-[#f7ab0a]/50 underline">E-Mail me</span>.
@@ -63,9 +63,9 @@ const Contact = (props: Props) => {
       <form
         ref={ref}
         onSubmit={sendEmail}
-        className="flex space-y-3 flex-col w-fit mx-auto"
+        className="flex space-y-3 flex-col sm:w-fit w-[90%] mx-auto"
       >
-        <div className="space-x-0 space-y-3 md:space-x-3  ">
+        <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mt-9 w-full">
           <input
             required
             type="text"
