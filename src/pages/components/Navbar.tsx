@@ -33,7 +33,7 @@ const Navbar = (props: Props) => {
   const router = useRouter();
   useEffect(() => {
     setTheme("dark");
-  }, []);
+  }, [setTheme]);
   return (
     <header className="dark:bg-gray-800 relative bg-white  flex flex-row items-center justify-between sticky top-0 max-w-7xl mx-auto z-20 xl:items-center p-2 ">
       {/* /Social Icons */}
@@ -54,11 +54,19 @@ const Navbar = (props: Props) => {
         className="flex flex-row"
       >
         {socialData.map((d, i): any => {
+          // Add rel and aria-label for SEO and accessibility
+          let label = "";
+          if (d.link.includes("github")) label = "GitHub";
+          else if (d.link.includes("linkedin")) label = "LinkedIn";
+          else if (d.link.includes("twitter")) label = "Twitter";
+          else if (d.link.includes("facebook")) label = "Facebook";
           return (
             <div key={i}>
               <SocialIcon
                 url={d.link}
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
                 bgColor="transparent"
                 fgColor="gray"
               />
