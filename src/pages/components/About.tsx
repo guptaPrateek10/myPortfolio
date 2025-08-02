@@ -23,12 +23,12 @@ const About = (props: Props) => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
         src={mypic.src}
-        width={300}
-        height={300}
+        width={150}
+        height={150}
         alt="Prateek picture"
         className="-mb-20 md:mb-0  rounded-full object-cover
         flex-shrink-0 w-56 h-56 md:rounded-lg
-         md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] "
+         md:w-64 md:h-95 xl:w-[400px] xl:h-[400px] "
       />
       <div className="space-y-10 my-12 px-0 md:px-10">
         <h4 className="text-4xl font-semibold my-6 text-gray-500">
@@ -37,7 +37,7 @@ const About = (props: Props) => {
           Background
         </h4>
         <p className="text-base dark: text-gray-500">
-          I'm a React JavaScript developer with 2.5 years of experience. As a
+          I'm a React JavaScript developer with 4.5 years of experience. As a
           developer, I'm passionate about building responsive, performant, and
           user-friendly web applications using React. I have a strong
           understanding of the React ecosystem, including Redux, React Router,
