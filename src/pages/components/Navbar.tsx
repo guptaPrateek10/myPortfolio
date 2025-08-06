@@ -21,7 +21,7 @@ const socialData = [
 ];
 const menuData = [
   { title: "Home", link: "#hero" },
-  { title: "About", link: "#about" },
+  { title: "About", link: "about" },
   { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
