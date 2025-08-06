@@ -20,11 +20,11 @@ const socialData = [
   { link: "https://www.facebook.com/Catchmeprateek" },
 ];
 const menuData = [
-  { title: "Home", link: "#hero" },
-  { title: "About", link: "about" },
-  { title: "Skills", link: "#skills" },
-  { title: "Projects", link: "#projects" },
-  { title: "Contact", link: "#contact" },
+  { title: "Home", link: "/" },
+  { title: "About", link: "/about" },
+  { title: "Skills", link: "/skills" },
+  { title: "Projects", link: "/projects" },
+  { title: "Contact", link: "/contact" },
 ];
 const Navbar = (props: Props) => {
   const [isOpenMenu, setisOpenMenu] = useState(false);
