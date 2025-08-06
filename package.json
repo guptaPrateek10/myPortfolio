@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export" :"next export"
+    "export": "next export",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
-    "@emailjs/browser":"^3.4.0",
+    "@emailjs/browser": "^3.4.0",
     "@heroicons/react": "^2.0.17",
     "@types/node": "18.16.3",
     "@types/react": "18.2.0",
