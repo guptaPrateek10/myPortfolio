@@ -43,5 +43,7 @@ jobs:
       # Deploy push to AWS S3
       - name: AWS Deploy push
         run: |
-          aws s3 sync out s3://iprateek.in
+          aws s3 sync out s3://iprateek.in --delete --cache-control "max-age=31536000" --exclude "*.html" --exclude "sitemap.xml" --exclude "robots.txt"
+          aws s3 sync out s3://iprateek.in --delete --cache-control "no-cache" --include "*.html" --include "sitemap.xml" --include "robots.txt"
+          aws s3 website s3://iprateek.in --index-document index.html --error-document index.html
           aws cloudfront create-invalidation --distribution-id E3I2HOXQEGLV8E --path "/*"
