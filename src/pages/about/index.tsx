@@ -11,7 +11,7 @@ export default function AboutPage() {
     >
       <Head>
         <title>
-          About | Prateek Gupta - Software Engineer, React Developer
+          About | Prateek Gupta - Software Engineer, React Developer.
         </title>
         <meta
           name="description"
